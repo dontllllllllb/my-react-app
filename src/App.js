@@ -4,7 +4,7 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  console.log('process.env.PUBLIC_URL:', process.env.PUBLIC_URL);
+  console.log('process.env.PUBLIC_URL-====>', process.env.PUBLIC_URL);
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
