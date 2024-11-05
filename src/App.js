@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="/my-react-app">
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <header className="App-header">
           <h1>欢迎使用 React!</h1>
