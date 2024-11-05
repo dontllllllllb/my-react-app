@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      sessionStorage.redirect = location.href;
-    </script>
-    <meta http-equiv="refresh" content="0; URL='/'">
     <meta charset="UTF-8" />
-    <meta name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 Not Found</title>
   </head>
   <body>
     <script>
-      (function () {
-        const redir = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redir && redir !== location.href) {
-          history.replaceState(null, null, redir);
-        }
-      })();
+      // GitHub Pages uses this script to redirect to the correct path
+      window.location.href = window.location.pathname + window.location.search;
     </script>
   </body>
 </html>
