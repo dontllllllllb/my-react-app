@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-react-app">
       <div className="App">
         <header className="App-header">
           <h1>欢迎使用 React!</h1>
