@@ -4,9 +4,8 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  console.log('process.env.PUBLIC_URL-====>', process.env.PUBLIC_URL);
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/my-react-app">
       <div className="App">
         <header className="App-header">
           <h1>欢迎使用 React!</h1>
