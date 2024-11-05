@@ -10,7 +10,7 @@ function App() {
         <header className="App-header">
           <h1>欢迎使用 React!</h1>
             <Routes>
-              <Route path="*" element={<Home />} />
+              <Route path="home" element={<Home />} />
               <Route path="about" element={<About />} />
             </Routes>
         </header>
