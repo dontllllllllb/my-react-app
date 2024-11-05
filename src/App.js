@@ -10,8 +10,8 @@ function App() {
         <header className="App-header">
           <h1>欢迎使用 React!</h1>
             <Routes>
-              <Route path="/" exact element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="*" element={<Home />} />
+              <Route path="about" element={<About />} />
             </Routes>
         </header>
       </div>
